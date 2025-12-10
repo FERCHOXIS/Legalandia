@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legalandia | Sam Checa</title>
+    </ /Font Awesome CSS>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.8/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="Icono.png" type="image/png">
+    <meta name="description" content="Legalandia - Aprende sobre información legal con diversión.">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <img src="Logo.png" alt="Legalandia Logo" class="logo-img">
+            <ul class="nav-menu">
+                <button id="menu-close-button" class="fas fa-times"></button>
+
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">Acerca de</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#rules" class="nav-link">Reglas del Juego</a>
+                </li>
+                <li class="nav-item">
+                    <a href="tarjetas.html" class="nav-link">Tarjetas de acción</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contacto</a>
+                </li>
+            </ul>
+            <button id="menu-open-button" class="fas fa-bars"></button>
+
+
+        </nav>
+    </header>
+
+    <main>
+        </ /Hero Section>
+        <section class="hero-section">
+            <div class="section-content">
+                <div class="hero-details">
+                    <h2 class="title">Bienvenido a Legalandia</h2>
+                    <h3 class="subtitle">¡Aprende sobre información legal con diversión!</h3>
+                    <p class="description">Legalandia es un juego de mesa creado para que estudiantes, futuros abogados
+                        y entusiastas del derecho aprendan y comprendan de manera sencilla y divertida sobre
+                        acciones y excepciones del ámbito jurídico.</p>
+                    <div class="buttons">
+                        <a href="tarjetas.html" class="button start">Empieza a jugar</a>
+                        <a href="contact.html" class="button contact">Contacto</a>
+                    </div>
+                </div>
+                <div class="hero-section-image-wrapper">
+                    <img src="Fondo.png" alt="Legalandia" class="hero-image">
+                </div>
+            </div>
+        </section>
+
+        </ /About Section>
+        <section class="about-section" id="about">
+            <div class="section-content">
+                <div class="about-image-wrapper">
+                    <img src="Acerca-de.png" alt="About Legalandia" class="about-image">
+                </div>
+                <div class="about-details">
+                    <h2 class="section-title">Acerca de</h2>
+                    <p class="text"> En Legalandia, cada casilla, tarjeta y movimiento está diseñado para introducirte a
+                        un concepto de procesal real. Mientras avanzas por el tablero, enfrentarás situaciones que te
+                        permitirán identificar qué es una acción, cuándo procede, qué es una excepción y cómo podría
+                        aplicarse en un caso práctico.
+
+                        El objetivo es transformar el estudio del derecho en una experiencia accesible y entretenida ya
+                        que
+                        cada decisión refuerza tu aprendizaje.
+
+                        Legalandia convierte lo complejo en comprensible, dejando atrás la teoría pesada.
+                    </p>
+                    <div class="social-link-list">
+                        <a href="https://www.facebook.com/SamCheca24" class="social-link"><i
+                                class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/sam_24_cf?igsh=MTQ0bm8yYm54bms5NA==" class="social-link"><i
+                                class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        </ /Testimonials Section>
+        <section class="testimonials-section" id="rules">
+            <h2 class="section-title">Reglas</h2>
+            <div class="section-content">
+
+                <div class="slider-wrapper swiper">
+
+                    <ul class="testimonials-list swiper-wrapper">
+                        <li class="testimonial swiper-slide">
+                            <img src="Objetivo.png" alt="Regla" class="user-image">
+                            <h3 class="name">Objetivo</h3>
+                            <i class="feedback">Ser el abogado más exitoso al acumular la mayor fortuna en Litipesos.
+                                Ganas cuando el resto de jugadores se
+                                declaran en "bancarrota".</i>
+                        </li>
+                        <li class="testimonial swiper-slide">
+                            <img src="Inicio.png" alt="Regla" class="user-image">
+                            <h3 class="name">Inicio del proceso</h3>
+                            <i class="feedback">
+                                1.- Coloca el tablero y elige ficha.<br>
+                                2.- El banco reparte litipesos iniciales.<br>
+                                3.- Todas las fichas empiezan en SALIDA y un jugador será el BANCO.
+                            </i>
+                        </li>
+                        <li class="testimonial swiper-slide">
+                            <img src="Turnos.png" alt="Regla" class="user-image">
+                            <h3 class="name">Turnos</h3>
+                            <i class="feedback">1.- Lanza dos dados, avanza y aplica la acción de la casilla.<br>
+
+                                2.- Si sacas doble, repites; tres dobles seguidos → JUZGADOS.</i>
+                        </li>
+                        <li class="testimonial swiper-slide">
+                            <img src="Acciones.png" alt="Regla" class="user-image">
+                            <h3 class="name">Tarjetas de Acción</h3>
+                            <i class="feedback">1.- Si caes en una acción/excepción sin dueño, puedes comprarla; si no,
+                                se
+                                subasta.<br>
+
+                                2.- Si tiene dueño, pagas honorarios.</i>
+                        </li>
+                        <li class="testimonial swiper-slide">
+                            <img src="Casas.png" alt="Regla" class="user-image">
+                            <h3 class="name">Casas y Juzgados</h3>
+                            <i class="feedback">Si tienes todas las propiedades de un color, puedes construir: hasta 4
+                                casas o 1 juzgado. Se construye equilibradamente.</i>
+                        </li>
+                        <li class="testimonial swiper-slide">
+                            <img src="Especial.png" alt="Regla" class="user-image">
+                            <h3 class="name">¿EXCEPCIONES? <br> ¿ACCIONES?</h3>
+                            <i class="feedback">Toma una carta, sigue las instrucciones y devuélvela.</i>
+                        </li>
+                        <li class="testimonial swiper-slide">
+                            <img src="Cárcel.png" alt="Regla" class="user-image">
+                            <h3 class="name">Desacato y Juzgado</h3>
+                            <i class="feedback">Entras por: caer en la casilla de MP, sacar tres dobles, o por una
+                                carta.
+                                Sales pagando, usando carta o sacando doble.</i>
+                        </li>
+                        <li class="testimonial swiper-slide">
+                            <img src="Banco.png" alt="Regla" class="user-image">
+                            <h3 class="name">Banco</h3>
+                            <i class="feedback">Administra dinero, propiedades, construcciones y subastas. No
+                                quiebra.</i>
+                        </li>
+                        <li class="testimonial swiper-slide">
+                            <img src="Business.png" alt="Regla" class="user-image">
+                            <h3 class="name">Negociación</h3>
+                            <i class="feedback">Los jugadores pueden intercambiar propiedades, casas, juzgados, cartas o
+                                litipesos.</i>
+                        </li>
+                        <li class="testimonial swiper-slide">
+                            <img src="Bancarrota.png" alt="Regla" class="user-image">
+                            <h3 class="name">Bancarrota</h3>
+                            <i class="feedback">Si no puedes pagar, entregas todo y quedas fuera.</i>
+                        </li>
+                    </ul>
+
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-slide-button swiper-button-prev"></div>
+                    <div class="swiper-slide-button swiper-button-next"></div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer-section">
+            <div class="section-content">
+                <p class="copyright-text">© 2025 Legalandia</p>
+                <div class="social-link-list">
+                    <a href="https://www.facebook.com/SamCheca24" class="social-link"><i
+                            class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/sam_24_cf?igsh=MTQ0bm8yYm54bms5NA==" class="social-link"><i
+                            class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="script.js"></script>
+    <script>
+        // Detectar clicks en enlaces del menú
+        document.querySelectorAll('a[href^="#"]').forEach(link => {
+            link.addEventListener('click', function (e) {
+                // 1. NO uses e.preventDefault(); deja que el enlace haga su trabajo.
+
+                // 2. Solo cerramos el menú
+                // Si ya implementaste la función "closeMenu()" que hicimos antes, úsala:
+                if (typeof closeMenu === "function") {
+                    closeMenu();
+                } else {
+                    // Si no, usa esto (aunque recomiendo la función para evitar el parpadeo):
+                    document.body.classList.remove('show-mobile-menu');
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

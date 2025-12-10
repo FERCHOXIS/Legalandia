@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legalandia | Sam Checa</title>
+    <//Font Awesome CSS>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="Icono.png" type="image/png">
+    <meta name="description" content="Legalandia - Aprende sobre información legal con diversión.">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <img src="Logo.png" alt="Legalandia Logo" class="logo-img">
+            <ul class="nav-menu">
+                <button id="menu-close-button" class="fas fa-times"></button>
+
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#about" class="nav-link">Acerca de</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#rules" class="nav-link">Reglas del Juego</a>
+                </li>
+                <li class="nav-item">
+                    <a href="tarjetas.html" class="nav-link">Tarjetas de acción</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contacto</a>
+                </li>
+            </ul>
+            <button id="menu-open-button" class="fas fa-bars"></button>
+
+
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-section">
+            <h2 class="section-title">Contacto con la creadora</h2>
+            <div class="section-content">
+                <ul class="contact-info-list">
+                    <li class="contact-info">
+                        <i class="fa-solid fa-person"></i>
+                        <p>(Prj Manager) Samantha Paola Checa Flores</p>
+                    </li>
+                     <li class="contact-info">
+                        <i class="fa-solid fa-person"></i>
+                        <p>(Dev Full Stack) Fernando Vazquez Pontaza</p>
+                    </li>
+                    <li class="contact-info">
+                        <i class="fa-solid fa-location-crosshairs"></i>
+                        <p>Blvd. Luis Donaldo Colosio 101, Amp. Santa Julia 3ra. Secc, 42084 Pachuca de Soto, Hgo.</p>
+                    </li>
+                    <li class="contact-info">
+                        <i class="fa-regular fa-envelope"></i>
+                        <p>checasam96@gmail.com</p>
+                    </li>
+                    <li class="contact-info">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>(+52) 771 279 6501</p>
+                    </li>
+                    <li class="contact-info">
+                        <i class="fa-regular fa-clock"></i>
+                        <p>Lunes - Viernes: 8:00 AM - 1:00 PM</p>
+                    </li>
+                </ul>
+
+                <form action="https://formsubmit.co/checasam96@gmail.com" method="POST" class="contact-form">
+                    <input type="text" name="nombre" class="form-input" required placeholder="Nombre completo">
+                    <input type="email" name="email" class="form-input" required placeholder="Tu correo">
+                    <textarea name="mensaje" class="form-input" required placeholder="Mensaje"></textarea>
+                    <button type="submit" class="submit-button">Envíar</button>
+                </form>
+            </div>
+        </section>
+         <footer class="footer-section">
+            <div class="section-content">
+                <p class="copyright-text">© 2025 Legalandia</p>
+                <div class="social-link-list">
+                    <a href="https://www.facebook.com/SamCheca24" class="social-link"><i
+                            class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/sam_24_cf?igsh=MTQ0bm8yYm54bms5NA==" class="social-link"><i
+                            class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+    <script>
+        // Detectar clicks en enlaces del menú
+        document.querySelectorAll('a[href^="#"]').forEach(link => {
+            link.addEventListener('click', function (e) {
+                // 1. NO uses e.preventDefault(); deja que el enlace haga su trabajo.
+
+                // 2. Solo cerramos el menú
+                // Si ya implementaste la función "closeMenu()" que hicimos antes, úsala:
+                if (typeof closeMenu === "function") {
+                    closeMenu();
+                } else {
+                    // Si no, usa esto (aunque recomiendo la función para evitar el parpadeo):
+                    document.body.classList.remove('show-mobile-menu');
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
